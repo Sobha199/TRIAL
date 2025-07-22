@@ -94,7 +94,7 @@ elif st.session_state.logged_in and not st.session_state.get("view_dashboard", F
             st.session_state.submitted_data.append(data)
             st.session_state.view_dashboard = True
             st.success("Data submitted successfully!")
-            st.experimental_rerun()
+            st.rerun()
 
 # Page 3: Dashboard
 elif st.session_state.logged_in and st.session_state.get("view_dashboard", False):
